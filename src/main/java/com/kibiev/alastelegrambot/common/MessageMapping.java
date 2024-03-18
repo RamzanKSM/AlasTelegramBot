@@ -1,15 +1,12 @@
-package org.kibiev.config.common;
-
-import org.springframework.stereotype.Component;
+package com.kibiev.alastelegrambot.common;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.TYPE)
+@Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-@Component
 public @interface MessageMapping {
-    String mapping() default "";
+    String value() default "";
 }

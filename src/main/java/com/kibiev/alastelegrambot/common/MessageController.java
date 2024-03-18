@@ -1,4 +1,4 @@
-package org.kibiev.config.common;
+package com.kibiev.alastelegrambot.common;
 
 import org.springframework.stereotype.Component;
 
@@ -8,7 +8,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.METHOD)
+@Target(ElementType.TYPE)
 @Component
 public @interface MessageController {
 }

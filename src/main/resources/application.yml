@@ -1,1 +1,9 @@
-spring.application.name=AlasTelegramBot
+telegram:
+  token: ${telegram-token}
+  name: ${telegram-name}
+spring:
+  datasource:
+    username: postgres
+    password: 1
+    url: jdbc:postgresql://localhost:5432/${db-name}
+    driver-class-name: org.postgresql.Driver
